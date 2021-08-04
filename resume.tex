@@ -5,20 +5,21 @@
 % (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+%
+%-----------------------------------------------------------
+% Zach's Additions:
 % Source: Jessica Su (author of modified version) https://github.com/jessicatysu/resume/blob/master/src/resume.tex 
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
 \usepackage{color}
+\usepackage{hyperref}
 \definecolor{mygrey}{gray}{0.80}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-
-
-
 
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
@@ -50,11 +51,17 @@
 \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
 \textbf{\large Zachary LeClaire}\\
 510-695-5535\\
-zjl16@case.edu
+zjl16@case.edu\\
+\url{https://www.linkedin.com/in/zachary-leclaire-18b69b162/}
 \end{tabular*}
 \\
 
 \vspace{0.1in}
+
+\resheading{Objective}
+\begin{itemize}
+    \item Seeking internship and research experiences to hone my programming skills, particularly for software engineering.
+\end{itemize}
 
 \resheading{Education}
 \begin{itemize}
@@ -63,7 +70,7 @@ zjl16@case.edu
 \begin{itemize}
 \item B.S. Computer Science (4.0 GPA)
 \item Minor: Mathematics
-\item Relevant Coursework: Data Structures and Algorithms
+\item Selected Coursework: Data Structures and Algorithms
 \end{itemize}
 \end{itemize}
 
@@ -73,63 +80,62 @@ zjl16@case.edu
 \item
 	\ressubheading{Tutor}{Danville, CA}{Private Tutor}{Math Tutor, June 2021 - Present}
 	\begin{itemize}
-\item Tutors K-12 students in math levels ranging from pre-algebra to Calculus
+\item Tutors students in math levels ranging from pre-algebra to calculus
 	\end{itemize}
 \end{itemize}
 
 
 \resheading{Extracirculars}
 \begin{itemize}
-
-\item
-	\ressubheading{CWRU Rocket Team}{Cleveland, OH}{Systems Lead/Treasurer}{Systems Lead/Treasurer, August 2020 - Present}
-	\begin{itemize}
-\item Designed and programmed a virtual test environment and simulation software that accelerated development by about 6 months.
-\item Implemented Autonomous guidance algorithms for the UAV-payload
-	\end{itemize}
-\item
-    \ressubheading{San Ramon Valley High Robotics Team}{Danville, CA}{Software Lead}{ Software Lead, May 2018 - May 2020}
-    \begin{itemize}
-\item Built and maintained modular Java codebase and integrated version control practices into development process.
-\item Led and trained team of 10 students in development of robotic software on tight six-week deadline. 
+    
+    \item
+    	\ressubheading{CWRU Rocket Team}{Cleveland, OH}{Systems Lead/Treasurer}{Systems Lead/Treasurer, August 2020 - Present}
+    	\begin{itemize}
+            \item Designed and programmed a virtual test environment and simulation software that accelerated development by about 6 months.
+            \item Implemented autonomous guidance algorithms for the UAV-payload
+            \item Skills used: Python, C++, Git
+    	\end{itemize}
+    \item
+        \ressubheading{San Ramon Valley High Robotics Team}{Danville, CA}{Software Lead}{ Software Lead, May 2018 - May 2020}
+        \begin{itemize}
+            \item Built and maintained modular Java codebase and integrated version control practices into development process.
+            \item Led and trained team of 10 students in development of robotic software on tight six-week deadline. 
+            \item Skills used: Java, C++, Git
+        \end{itemize}
     \end{itemize}
-\end{itemize}
-
 
 \resheading{Projects}
-\begin{itemize}
+\begin{itemize} 
 % get better projects on here
-\item
-	\ressubheading{Image-to-ASCII webapp}{Danville, CA}{Student}{Spring 2020}
-	\begin{itemize}
-		\resitem{Built web app that processes images to convert them to ASCII text patterns (Python, PHP)} 
-	\end{itemize}
-	
-\item 
-    \ressubheading{Misinformation Detection}{Danville, CA}{Student}{Spring 2021}
-    \begin{itemize}
-        \reitem {Produced a web app that identifies recently posted tweets that contain misinformation (Python, MySQL)}
-        \reitem {Developed Python scripts to parse input data and communicate between components of the application.}
-    \end{itemize}
-
+    \item 
+        \ressubheading{Mr.Worm - Discord Moderation Tool}{Danville, CA}{Student}{Summer 2020 - Present}
+        \begin{itemize}
+            \resitem {Developing bot and webapp for analytics and moderation of users based on keywords, sentiment, and activity.}
+            \resitem {Skills used: Node.js, HTML/JS/CSS, MySQL}
+        \end{itemize}
+    \item 
+        \ressubheading{Ascii Art Webapp}{Danville, CA}{Student}{Spring 2021}
+        \begin{itemize}
+            \resitem {Made webapp that generated ascii art versions of image files.}
+            \resitem {Skills used: Python, PHP, HTML/JS/CSS }
+        \end{itemize}
+    \item 
+        \ressubheading{Misinformation Detection Webapp}{Danville, CA}{Student}{Spring 2021}
+        \begin{itemize}
+            \resitem {Worked on backend of project - specifically MySQL database, categorization model, and parsing data.}
+            \resitem {Skills used: Python, MySQL, JS}
+        \end{itemize}
 \end{itemize}
-
-%\resheading{Awards}
-%    \begin{itemize}
-%    \item \textbf{CWRU Dean's High Honors}(Spring 2020-2021, awarded for fall&spring semester for good academic performance)
-%    \item \textbf{Computer Science Student of Excellence} (2018, awarded to top HS students in the computer science in Contra Costa county)
-%\end{itemize}
 
 \resheading{Awards}
 \begin{itemize}
-    \item \textbf{CWRU Dean's High Honors} (Spring 2020-2021, awarded for fall and spring semester for good academic performance)
-    \item \textbf{CS Student of Excellence} (2018, awarded to top CS students in contra costa county)
+    \item \textbf{CWRU Dean's High Honors} (2020-2021, awarded for fall and spring semester for over 3.75 GPA)
+    \item \textbf{CS Student of Excellence} (2018, awarded to top AP Computer Science A students in Contra Costa County)
 \end{itemize}
-
 
 \resheading{Skills}
 \begin{itemize}
-    \item   {Java, Python, MySQL, HTML/CSS/JS, C/C++ }
+    \item   {Java, Python, HTML/CSS/JS, Bash, MySQL, Git, regex}
 \end{itemize}
 
 \end{document}
